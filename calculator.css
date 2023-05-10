@@ -17,6 +17,7 @@
 
 .heading{
 text-align: center;
+margin: 10px;
 }
 
 .button{
@@ -40,6 +41,7 @@ text-align: center;
 .inputValue:first-child{
     grid-column: 1 / span 4;
 }
+
 
 
 .inputValue{
@@ -143,4 +145,21 @@ text-align: center;
     }
   }
 
+   h3 {
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: #e8ec0d;
+    filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #e8ec0d);
+    animation: animateText 3s steps(8) infinite;
+  }
   
+  @keyframes animateText {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
