@@ -1,4 +1,20 @@
+* {
+  box-sizing: border-box;
+}
 
+html,
+body {
+  margin: 0 auto;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  font-family: monospace;
+  justify-content: center;
+  background-color: #1d212b;
+}
 
 .main{
     display: grid;
@@ -8,7 +24,6 @@
     position: relative;
     max-width: 100%;
     text-align: center;
-    /* color: #252B37; */
     padding: 20px;
     border-radius: 20px;
     background-color: #151823;
@@ -54,38 +69,24 @@ margin: 10px;
     width: calc(100% - 20px);
 }
 
-* {
-    box-sizing: border-box;
-  }
-  
-  html,
-  body {
-    margin: 0 auto;
-    height: 100%;
-  }
-  
-  body {
-    display: flex;
-    align-items: center;
-    font-family: monospace;
-    justify-content: center;
-    background-color: #1d212b;
-  }
+
   
  
   @media only screen and (max-width:500px) {
     .button{
-      align-items: center;
       width: 3rem;
       height: 4rem;
-      color: white;
       font-size: 1.2rem;
       background-color: #d8e61b;
       margin: 5px;
-      border-radius: 10px;
-      box-shadow: 0px 0px 12px #888888;
-      font-weight: bold;
+    
   }
+  .main{
+    display: grid;
+    grid-template-columns: repeat(4, 3.4rem);
+   
+    max-width: 90%;
+}
   }
   .board:after {
     position: absolute;
@@ -106,20 +107,7 @@ margin: 10px;
 
   @media only screen and (max-width:550px) {
     .board:after {
-        position: absolute;
-        content: "";
-        top: 1vw;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
         transform: scale(0.85);
-        filter: blur(5vw);
-        background: linear-gradient(270deg, #0fffc1, #e8ec0d);
-        background-size: 200% 200%;
-        animation: animateGlow 10s ease infinite;
       }
   }
   @keyframes animateGlow {
@@ -150,7 +138,7 @@ margin: 10px;
     font-size: 2em;
     letter-spacing: 2px;
     margin-top: 20px;
-    color: #e8ec0d;
+    color: #ec9e0d;
     filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #e8ec0d);
     animation: animateText 3s steps(8) infinite;
   }
