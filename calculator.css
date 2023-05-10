@@ -70,12 +70,21 @@ text-align: center;
     background-color: #1d212b;
   }
   
-/*  
+ 
   @media only screen and (max-width:500px) {
-    .main{
-        margin: 200px;
-    }
-  } */
+    .button{
+      align-items: center;
+      width: 3rem;
+      height: 4rem;
+      color: white;
+      font-size: 1.2rem;
+      background-color: #d8e61b;
+      margin: 5px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 12px #888888;
+      font-weight: bold;
+  }
+  }
   .board:after {
     position: absolute;
     content: "";
