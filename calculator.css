@@ -1,0 +1,137 @@
+
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(4, 5rem);
+    place-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    /* color: #252B37; */
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #151823;
+    animation: textColor 10s ease infinite;
+}
+
+.heading{
+text-align: center;
+}
+
+.button{
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    color: white;
+    font-size: 1.7rem;
+    background-color: #d8e61b;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px #888888;
+    font-weight: bold;
+}
+
+.button:hover{
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 3px 3px  #c5c5c5, -3px -3px #DBB8C9;
+}
+.inputValue:first-child{
+    grid-column: 1 / span 4;
+}
+
+
+.inputValue{
+    /* color: white; */
+    /* background-color: #ec780bee; */
+    margin: 20px 0;
+    font-size: 2rem;
+    text-align: right;
+    height: 3.5rem;
+    width: calc(100% - 20px);
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    margin: 0 auto;
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    justify-content: center;
+    background-color: #1d212b;
+  }
+  
+/*  
+  @media only screen and (max-width:500px) {
+    .main{
+        margin: 200px;
+    }
+  } */
+  .board:after {
+    position: absolute;
+    content: "";
+    top: 1vw;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    transform: scale(0.75);
+    filter: blur(5vw);
+    background: linear-gradient(270deg, #0fffc1, #e8ec0d);
+    background-size: 200% 200%;
+    animation: animateGlow 10s ease infinite;
+  }
+
+  @media only screen and (max-width:550px) {
+    .board:after {
+        position: absolute;
+        content: "";
+        top: 1vw;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        transform: scale(0.85);
+        filter: blur(5vw);
+        background: linear-gradient(270deg, #0fffc1, #e8ec0d);
+        background-size: 200% 200%;
+        animation: animateGlow 10s ease infinite;
+      }
+  }
+  @keyframes animateGlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes textColor {
+    0% {
+      color: #7e0fff;
+    }
+    50% {
+      color: #0fffc1;
+    }
+    100% {
+      color: #7e0fff;
+    }
+  }
+
+  
