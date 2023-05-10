@@ -139,7 +139,7 @@ margin: 10px;
     letter-spacing: 2px;
     margin-top: 20px;
     color: #ec9e0d;
-    filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #e8ec0d);
+    filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 61px #e8ec0d);
     animation: animateText 3s steps(8) infinite;
   }
   
