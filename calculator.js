@@ -136,17 +136,3 @@ btnDot.addEventListener("click", ()=>{
     
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-

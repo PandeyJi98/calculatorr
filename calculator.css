@@ -85,7 +85,7 @@ margin: 10px;
     display: grid;
     grid-template-columns: repeat(4, 3.4rem);
    
-    max-width: 90%;
+    max-width: 100%;
 }
   }
   .board:after {
